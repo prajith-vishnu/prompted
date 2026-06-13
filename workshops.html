@@ -9,13 +9,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="canonical" href="https://prompted-pink.vercel.app/workshops.html" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Prompted" />
+  <meta property="og:title" content="Workshops — Prompted" />
+  <meta property="og:description" content="Free, hands-on AI literacy workshops at North Texas public libraries. One focused hour, built for total beginners." />
+  <meta property="og:url" content="https://prompted-pink.vercel.app/workshops.html" />
+  <meta property="og:image" content="https://prompted-pink.vercel.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Prompted — free AI literacy workshops in North Texas" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Workshops — Prompted" />
+  <meta name="twitter:description" content="Free, hands-on AI literacy workshops at North Texas public libraries. One focused hour, built for total beginners." />
+  <meta name="twitter:image" content="https://prompted-pink.vercel.app/og-image.png" />
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body>
 
 <nav>
   <div class="nav-inner">
     <a class="logo" href="index.html"><span class="caret">&gt;</span> prompted<span class="caret">_</span></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="primary-nav">
       <li><a href="index.html">Home</a></li>
       <li class="has-dropdown">
         <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">About <i data-lucide="chevron-down" width="15"></i></button>
@@ -30,7 +48,7 @@
     </ul>
     <div class="nav-actions">
       <button class="theme-toggle" aria-label="Toggle light and dark mode"><i data-lucide="sun"></i></button>
-      <button class="hamburger" aria-label="Open menu"><i data-lucide="menu"></i></button>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><i data-lucide="menu"></i></button>
     </div>
   </div>
 </nav>
@@ -99,7 +117,7 @@
 
     <div class="faq-item reveal">
       <button class="faq-q">Do I need to bring anything? <i data-lucide="plus" width="20"></i></button>
-      <div class="faq-a"><p>Just yourself. A laptop or phone helps, but library computers are available at every session. We handle the rest.</p></div>
+      <div class="faq-a"><p>Just yourself. A laptop or phone helps, but library computers are available at our sessions. We handle the rest.</p></div>
     </div>
     <div class="faq-item reveal">
       <button class="faq-q">Is it really free? <i data-lucide="plus" width="20"></i></button>
@@ -107,7 +125,7 @@
     </div>
     <div class="faq-item reveal">
       <button class="faq-q">I've never used AI before. Is this for me? <i data-lucide="plus" width="20"></i></button>
-      <div class="faq-a"><p>You're exactly who this is for. Most participants have never opened an AI tool before the workshop. That's the point.</p></div>
+      <div class="faq-a"><p>You're exactly who this is for. This is built for people who've never opened an AI tool before. That's the point.</p></div>
     </div>
     <div class="faq-item reveal">
       <button class="faq-q">What ages can attend? <i data-lucide="plus" width="20"></i></button>
@@ -115,7 +133,7 @@
     </div>
     <div class="faq-item reveal">
       <button class="faq-q">Will my data be safe? <i data-lucide="plus" width="20"></i></button>
-      <div class="faq-a"><p>Data privacy is part of the curriculum itself. We teach you what AI tools do with your information and how to use them without giving away anything you shouldn't.</p></div>
+      <div class="faq-a"><p>Data privacy is part of the curriculum itself. We help you learn what AI tools do with your information and how to use them without giving away anything you shouldn't.</p></div>
     </div>
   </div>
 </section>
@@ -148,7 +166,7 @@
   </div>
 </footer>
 
-<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://unpkg.com/lucide@1.18.0/dist/umd/lucide.min.js" integrity="sha384-UUwTS+RNYj0wSOgt4wIqWyG4Rc/xvrqgHDg/fEwc2e6WEFUooChoVCwkcddDnMaL" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
 </html>

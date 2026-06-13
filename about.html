@@ -9,13 +9,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="canonical" href="https://prompted-pink.vercel.app/about.html" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Prompted" />
+  <meta property="og:title" content="About Prompted — AI literacy for everyone" />
+  <meta property="og:description" content="Why Prompted exists: free, hands-on AI education at North Texas public libraries, for people of every age and background." />
+  <meta property="og:url" content="https://prompted-pink.vercel.app/about.html" />
+  <meta property="og:image" content="https://prompted-pink.vercel.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Prompted — free AI literacy workshops in North Texas" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Prompted — AI literacy for everyone" />
+  <meta name="twitter:description" content="Why Prompted exists: free, hands-on AI education at North Texas public libraries, for people of every age and background." />
+  <meta name="twitter:image" content="https://prompted-pink.vercel.app/og-image.png" />
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body>
 
 <nav>
   <div class="nav-inner">
     <a class="logo" href="index.html"><span class="caret">&gt;</span> prompted<span class="caret">_</span></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="primary-nav">
       <li><a href="index.html">Home</a></li>
       <li class="has-dropdown">
         <button class="nav-dropdown-toggle active" aria-haspopup="true" aria-expanded="false">About <i data-lucide="chevron-down" width="15"></i></button>
@@ -30,7 +48,7 @@
     </ul>
     <div class="nav-actions">
       <button class="theme-toggle" aria-label="Toggle light and dark mode"><i data-lucide="sun"></i></button>
-      <button class="hamburger" aria-label="Open menu"><i data-lucide="menu"></i></button>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><i data-lucide="menu"></i></button>
     </div>
   </div>
 </nav>
@@ -74,7 +92,7 @@
       <div class="card reveal">
         <i data-lucide="shield-check" width="26"></i>
         <h3>Safety built in</h3>
-        <p>We teach data privacy, how to spot AI mistakes, and when not to trust an answer — from the very first session.</p>
+        <p>We cover data privacy, how to spot AI mistakes, and when not to trust an answer — from the very first session.</p>
       </div>
       <div class="card reveal">
         <i data-lucide="wrench" width="26"></i>
@@ -122,7 +140,7 @@
   </div>
 </footer>
 
-<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://unpkg.com/lucide@1.18.0/dist/umd/lucide.min.js" integrity="sha384-UUwTS+RNYj0wSOgt4wIqWyG4Rc/xvrqgHDg/fEwc2e6WEFUooChoVCwkcddDnMaL" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
 </html>

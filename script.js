@@ -34,7 +34,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const burger = document.querySelector(".hamburger");
   const links = document.querySelector(".nav-links");
   if (burger && links) {
-    burger.addEventListener("click", () => links.classList.toggle("open"));
+    burger.addEventListener("click", () => {
+      const open = links.classList.toggle("open");
+      burger.setAttribute("aria-expanded", String(open));
+    });
+    links.querySelectorAll("a").forEach((link) =>
+      link.addEventListener("click", () => {
+        links.classList.remove("open");
+        burger.setAttribute("aria-expanded", "false");
+      })
+    );
   }
 
   // ---------- Nav dropdown ----------

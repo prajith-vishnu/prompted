@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found — Prompted</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="theme-color" content="#0a0a0f" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="index.html"><span class="caret">&gt;</span> prompted<span class="caret">_</span></a>
+    <ul class="nav-links" id="primary-nav">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-dropdown">
+        <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">About <i data-lucide="chevron-down" width="15"></i></button>
+        <ul class="dropdown-menu">
+          <li><a href="about.html">About Prompted</a></li>
+          <li><a href="team.html">Meet the Team</a></li>
+        </ul>
+      </li>
+      <li><a href="workshops.html">Workshops</a></li>
+      <li><a href="volunteer.html">Volunteer</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle light and dark mode"><i data-lucide="sun"></i></button>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><i data-lucide="menu"></i></button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <span class="eyebrow">error 404</span>
+    <h1 style="font-size:clamp(40px,7vw,72px);">This page wandered off.</h1>
+    <p class="lede">The link may be broken or the page may have moved. Let's get you back to something useful.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="index.html">Back home <i data-lucide="arrow-right" width="17"></i></a>
+      <a class="btn btn-ghost" href="workshops.html">See workshops</a>
+    </div>
+  </div>
+</header>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="col">
+        <a class="logo" href="index.html" style="margin-bottom:12px;display:inline-block;"><span class="caret">&gt;</span> prompted<span class="caret">_</span></a>
+        <p style="color:var(--text-muted);font-size:14px;max-width:260px;">Free AI literacy workshops at public libraries across North Texas.</p>
+      </div>
+      <div class="col">
+        <h4>pages</h4>
+        <a href="about.html">About</a>
+        <a href="team.html">Meet the Team</a>
+        <a href="workshops.html">Workshops</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="col">
+        <h4>connect</h4>
+        <a href="contact.html">promptedworkshops@gmail.com</a>
+        <span style="display:block;color:var(--text-muted);font-size:14.5px;">Instagram — coming soon</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Prompted · Denton, TX</span>
+      <span>founded by Prajith Vishnu</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@1.18.0/dist/umd/lucide.min.js" integrity="sha384-UUwTS+RNYj0wSOgt4wIqWyG4Rc/xvrqgHDg/fEwc2e6WEFUooChoVCwkcddDnMaL" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
