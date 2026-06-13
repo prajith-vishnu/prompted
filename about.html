@@ -17,7 +17,13 @@
     <a class="logo" href="index.html"><span class="caret">&gt;</span> prompted<span class="caret">_</span></a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
+      <li class="has-dropdown">
+        <button class="nav-dropdown-toggle active" aria-haspopup="true" aria-expanded="false">About <i data-lucide="chevron-down" width="15"></i></button>
+        <ul class="dropdown-menu">
+          <li><a href="about.html" class="active">About Prompted</a></li>
+          <li><a href="team.html">Meet the Team</a></li>
+        </ul>
+      </li>
       <li><a href="workshops.html">Workshops</a></li>
       <li><a href="volunteer.html">Volunteer</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -33,14 +39,14 @@
   <div class="container">
     <span class="eyebrow">about</span>
     <h1 style="font-size:clamp(36px,6vw,60px);">Started in Denton.<br />Built for everyone.</h1>
-    <p class="lede">Prompted was founded by Prajith Vishnu, a high school student in Denton, Texas, who kept noticing the same thing: the people who could benefit most from AI were the ones nobody was teaching.</p>
+    <p class="lede">Prompted brings free, hands-on AI education to public libraries across North Texas — so that learning to use AI well never depends on your age, your job, or your zip code.</p>
   </div>
 </header>
 
 <section class="alt">
   <div class="container reveal">
     <span class="eyebrow">the story</span>
-    <h2>Why a high schooler started this</h2>
+    <h2>Why Prompted exists</h2>
     <div class="grid-2" style="margin-top:40px;">
       <div>
         <p style="color:var(--text-muted);margin-bottom:18px;">AI tools became powerful faster than anyone taught people to use them. Students get exposure at school. Tech workers get it at their jobs. But everyone else — parents, grandparents, neighbors, small business owners — got left to figure it out alone, or worse, to be afraid of it.</p>
@@ -88,17 +94,6 @@
   </div>
 </section>
 
-<section>
-  <div class="container reveal">
-    <span class="eyebrow">the founder</span>
-    <h2>Hi — I'm Prajith.</h2>
-    <p class="section-intro">I started Prompted as a high school student in Denton, Texas, after noticing the same thing again and again: the people who stood to gain the most from AI were the ones no one was teaching.</p>
-    <p style="color:var(--text-muted);margin-bottom:18px;">Friends my age picked these tools up in an afternoon. But adults I respected — people who were sharp at everything they did — kept telling me they felt left behind, didn't trust it, or just didn't know where to start. That gap didn't sit right with me.</p>
-    <p style="color:var(--text-muted);">So I built Prompted around one simple idea: meet people where they already are — the public library — and sit down next to them while they actually try it. No lectures, no jargon, no cost. This is just the beginning, and I'd love for you to be part of it — as a participant, a volunteer, or a library that wants to host us.</p>
-    <p style="font-family:'JetBrains Mono',monospace;color:var(--accent-strong);margin-top:26px;">&gt; — Prajith Vishnu, founder_</p>
-  </div>
-</section>
-
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -109,13 +104,14 @@
       <div class="col">
         <h4>pages</h4>
         <a href="about.html">About</a>
+        <a href="team.html">Meet the Team</a>
         <a href="workshops.html">Workshops</a>
         <a href="volunteer.html">Volunteer</a>
         <a href="contact.html">Contact</a>
       </div>
       <div class="col">
         <h4>connect</h4>
-        <a href="contact.html">hello@prompted.org</a>
+        <a href="contact.html">promptedworkshops@gmail.com</a>
         <a href="#">Instagram</a>
         <a href="#">LinkedIn</a>
       </div>

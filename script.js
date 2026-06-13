@@ -37,6 +37,29 @@ document.addEventListener("DOMContentLoaded", () => {
     burger.addEventListener("click", () => links.classList.toggle("open"));
   }
 
+  // ---------- Nav dropdown ----------
+  const closeDropdowns = (except) => {
+    document.querySelectorAll(".has-dropdown.open").forEach((d) => {
+      if (d === except) return;
+      d.classList.remove("open");
+      const t = d.querySelector(".nav-dropdown-toggle");
+      if (t) t.setAttribute("aria-expanded", "false");
+    });
+  };
+  document.querySelectorAll(".nav-dropdown-toggle").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const li = btn.closest(".has-dropdown");
+      const willOpen = !li.classList.contains("open");
+      closeDropdowns(li);
+      li.classList.toggle("open", willOpen);
+      btn.setAttribute("aria-expanded", String(willOpen));
+    });
+  });
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".has-dropdown")) closeDropdowns();
+  });
+
   // ---------- Scroll reveal ----------
   const observer = new IntersectionObserver(
     (entries) => {
