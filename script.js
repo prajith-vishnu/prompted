@@ -103,12 +103,36 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ---------- Forms ----------
-  document.querySelectorAll("form[data-demo]").forEach((form) => {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
+  document.querySelectorAll("form[data-form]").forEach((form) => {
+    const showSuccess = () => {
       form.style.display = "none";
       const success = form.parentElement.querySelector(".form-success");
       if (success) success.classList.add("show");
+    };
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const endpoint = form.getAttribute("action");
+      // No endpoint wired up yet — keep the demo confirmation.
+      if (!endpoint) return showSuccess();
+
+      const btn = form.querySelector('button[type="submit"]');
+      const original = btn ? btn.innerHTML : "";
+      if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
+
+      try {
+        const data = Object.fromEntries(new FormData(form).entries());
+        const res = await fetch(endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify(data),
+        });
+        if (!res.ok) throw new Error("Request failed");
+        form.reset();
+        showSuccess();
+      } catch (err) {
+        if (btn) { btn.disabled = false; btn.innerHTML = original; }
+        alert("Sorry — that didn't send. Please email promptedworkshops@gmail.com directly.");
+      }
     });
   });
 });

@@ -47,18 +47,22 @@
   <div class="container">
     <div class="grid-2" style="align-items:start;">
       <div class="reveal">
-        <form data-demo>
+        <form data-form action="https://formsubmit.co/ajax/promptedworkshops@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New contact — Prompted site" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="field">
             <label for="c-name">Name</label>
-            <input id="c-name" type="text" placeholder="Your name" required />
+            <input id="c-name" name="name" type="text" placeholder="Your name" required />
           </div>
           <div class="field">
             <label for="c-email">Email</label>
-            <input id="c-email" type="email" placeholder="you@email.com" required />
+            <input id="c-email" name="email" type="email" placeholder="you@email.com" required />
           </div>
           <div class="field">
             <label for="c-msg">Message</label>
-            <textarea id="c-msg" placeholder="What's on your mind?" required></textarea>
+            <textarea id="c-msg" name="message" placeholder="What's on your mind?" required></textarea>
           </div>
           <button class="btn btn-primary" type="submit">Send message <i data-lucide="arrow-right" width="17"></i></button>
         </form>
@@ -81,7 +85,7 @@
         <div class="card">
           <i data-lucide="share-2" width="24"></i>
           <h3>Social</h3>
-          <p>Instagram · LinkedIn — coming soon</p>
+          <p><a href="https://www.linkedin.com/in/prajith-vishnu-r-24450b361/" target="_blank" rel="noopener" style="color:var(--accent-strong);">LinkedIn</a> · Instagram coming soon</p>
         </div>
       </div>
     </div>
@@ -106,8 +110,8 @@
       <div class="col">
         <h4>connect</h4>
         <a href="contact.html">promptedworkshops@gmail.com</a>
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/prajith-vishnu-r-24450b361/" target="_blank" rel="noopener">LinkedIn</a>
+        <span style="display:block;color:var(--text-muted);font-size:14.5px;">Instagram — coming soon</span>
       </div>
     </div>
     <div class="footer-bottom">

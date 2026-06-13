@@ -80,18 +80,22 @@
     <span class="eyebrow reveal">join</span>
     <h2 class="reveal" style="margin-bottom:40px;">Volunteer interest form</h2>
     <div class="reveal">
-      <form data-demo>
+      <form data-form action="https://formsubmit.co/ajax/promptedworkshops@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New volunteer interest — Prompted site" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
         <div class="field">
           <label for="v-name">Name</label>
-          <input id="v-name" type="text" placeholder="Your full name" required />
+          <input id="v-name" name="name" type="text" placeholder="Your full name" required />
         </div>
         <div class="field">
           <label for="v-email">Email</label>
-          <input id="v-email" type="email" placeholder="you@email.com" required />
+          <input id="v-email" name="email" type="email" placeholder="you@email.com" required />
         </div>
         <div class="field">
           <label for="v-avail">Availability</label>
-          <select id="v-avail" required>
+          <select id="v-avail" name="availability" required>
             <option value="" disabled selected>When are you usually free?</option>
             <option>Saturday afternoons</option>
             <option>Sunday afternoons</option>
@@ -101,7 +105,7 @@
         </div>
         <div class="field">
           <label for="v-why">Why do you want to volunteer?</label>
-          <textarea id="v-why" placeholder="A sentence or two is plenty." required></textarea>
+          <textarea id="v-why" name="message" placeholder="A sentence or two is plenty." required></textarea>
         </div>
         <button class="btn btn-primary" type="submit">Send it <i data-lucide="arrow-right" width="17"></i></button>
       </form>
@@ -131,8 +135,8 @@
       <div class="col">
         <h4>connect</h4>
         <a href="contact.html">promptedworkshops@gmail.com</a>
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/prajith-vishnu-r-24450b361/" target="_blank" rel="noopener">LinkedIn</a>
+        <span style="display:block;color:var(--text-muted);font-size:14.5px;">Instagram — coming soon</span>
       </div>
     </div>
     <div class="footer-bottom">
