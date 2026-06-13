@@ -1,0 +1,19 @@
+# macOS / Windows cruft
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Logs & dependencies (in case tooling is ever added)
+*.log
+node_modules/
+
+# Local env secrets
+.env
+.env.*
+
+# Vercel CLI artifacts
+.vercel
